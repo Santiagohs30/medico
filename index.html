@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial de Consultas - Clínica La Bien Amada</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="image.png" alt="Logo" class="logo">
+      <div class="clinic-info">
+        <h1>Clínica La Bien Amada</h1>
+        <p>Bienvenido <span id="nombreUsuario">Dr. Robinson Arias</span></p>
+      </div>
+    </header>
+    
+    <div class="opciones">
+      <label for="seleccionConsulta">Seleccionar por:</label>
+      <select id="seleccionConsulta">
+        <option value="medico">Médico</option>
+        <option value="fecha">Fecha</option>
+      </select>
+    </div>
+
+    <div class="search-box">
+      <label for="busqueda">Buscar por nombre:</label>
+      <input type="text" id="busqueda" placeholder="Ingrese el nombre del paciente">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha de Atención</th>
+          <th>Médico</th>
+          <th>Paciente</th>
+          <th>Descripción</th>
+          <th>Diagnóstico</th>
+          <th>Tratamiento</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2023-11-01</td>
+          <td>Dr Robinson</td>
+          <td>Marianita Urrea</td>
+          <td>Consulta por que me trae loco y me parece buena alumna</td>
+          <td>Palpitación cardíaca e insomnio</td>
+          <td>Receto invitación a cuidarla por mi cuenta</td>
+          <td><button onclick="consultarPaciente('Marianita Urrea')">Consultar</button></td>
+        </tr>
+        <tr>
+          <td>2023-11-10</td>
+          <td>Dr. Sepúlveda</td>
+          <td>Juan Campos</td>
+          <td>Dolor en espalda por posiciones indebidas</td>
+          <td>Separación de vértebras</td>
+          <td>Mejorar las posiciones en la cama </td>
+          <td><button onclick="consultarPaciente('Juan Campos')">Consultar</button></td>
+        </tr>
+        <tr>
+          <td>2023-11-10</td>
+          <td>Dr. Maycol Acevedo</td>
+          <td>Laura X Montoya</td>
+          <td>Consulta por necesidad de comer todo el tiempo</td>
+          <td>Lombrices en todo el sistema digestivo </td>
+          <td>Seguir comiendo sushi 20 veces por día</td>
+          <td><button onclick="consultarPaciente('Laura X Montoya')">Consultar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function consultarPaciente(nombre) {
+      alert("Consulta para el paciente: " + nombre);
+      // Puedes agregar lógica adicional aquí para manejar la consulta del paciente
+    }
+  </script>
+</body>
+</html>

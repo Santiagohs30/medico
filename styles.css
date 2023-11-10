@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #007bff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: rgb(20, 72, 184)
+}
+
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.clinic-info {
+  text-align: left;
+}
+
+h1 {
+  margin: 0;
+}
+
+#nombreUsuario {
+  font-weight: bold;
+}
+
+.opciones {
+  margin-top: 20px;
+}
+
+.search-box {
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #d1c4c4;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #0056b3;
+  color: white;
+}
