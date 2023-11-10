@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disponibilidad - Clínica La Bien Amada</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="image.png" alt="Logo" class="logo">
+      <div class="clinic-info">
+        <h1>Clinica La Bien Amada</h1>
+        <p>Dr. Robinson Arias</p>
+      </div>
+    </header>
+
+    <h2>Registrar Disponibilidad del doctor</h2>
+
+    <form id="disponibilidadForm">
+
+      <label for="fecha">Seleccionar fecha disponible:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <button type="submit">Registrar Disponibilidad</button>
+    </form>
+
+    <h2>Calendario de Disponibilidad</h2>
+    <h2>Sem 15: Nov 13-Nov17</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Hora</th>
+          <th>Disponibilidad</th>
+          <th>Marcar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td>09:00 AM - 01:00 PM</td>
+          <td>Disponible</td>
+          <td><button onclick="marcarDiaLibre('Lunes')">Marcar Libre</button></td>
+        </tr>
+        <tr>
+          <td>Martes</td>
+          <td>02:00 PM - 06:00 PM</td>
+          <td>No Disponible</td>
+          <td><button onclick="marcarDiaLibre('Martes')" disabled>Marcar Libre</button></td>
+        </tr>
+        <tr>
+          <td>Miércoles</td>
+          <td>09:00 AM - 01:00 PM</td>
+          <td>Disponible</td>
+          <td><button onclick="marcarDiaLibre('Miércoles')">Marcar Libre</button></td>
+        </tr>
+        <tr>
+          <td>Jueves</td>
+          <td>02:00 PM - 06:00 PM</td>
+          <td>Disponible</td>
+          <td><button onclick="marcarDiaLibre('Jueves')">Marcar Libre</button></td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>09:00 AM - 01:00 PM</td>
+          <td>No Disponible</td>
+          <td><button onclick="marcarDiaLibre('Viernes')" disabled>Marcar Libre</button></td>
+        </tr>
+       
+  </div>
+
+  <script>
+    function marcarDiaLibre(dia) {
+      alert("Día marcado como libre: " + dia);
+     
+    }
+  </script>
+</body>
+</html>
