@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .left-panel {
+    flex: 1;
+    text-align: center;
+    padding: 50px;
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .left-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .right-panel {
+    flex: 1;
+    text-align: center;
+    padding: 50px;
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .right-panel .logo {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ecf0f1;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #27ae60;
+  }
+  
+  p {
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  a {
+    color: #fff;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
